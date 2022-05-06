@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
+
 guess=0
 numberOfFiles=$(ls | wc -l)
+
 function guessing {
 	while [[ $guess -ne $numberOfFiles ]]
 	do
@@ -16,4 +18,5 @@ function guessing {
 	done
 }
 guessing
-echo "Congratulations! You guessed the number of files."
+echo "Congratulations!"
+echo "You guessed the number of files."
